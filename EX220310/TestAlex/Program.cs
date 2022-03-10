@@ -1,4 +1,8 @@
 ﻿using System;
+using Pokemonlibrary;
+
+
+
 
 namespace TestAlex
 {
@@ -6,7 +10,8 @@ namespace TestAlex
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ISpell s = new Spell();
         }
+
     }
 }
