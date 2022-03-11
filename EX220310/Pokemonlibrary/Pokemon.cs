@@ -16,15 +16,18 @@ namespace Pokemonlibrary
         Grass,
         Water
     }
-   public abstract class Pokemon: IPokemon
+
+    public abstract class Pokemon: IPokemon
     {
-        List<ISpell> SpellList = new List<ISpell>();
+        private List<ISpell> SpellList = new List<ISpell>();
         private string name;
         private double life, startLife;
+
         public string GetName()
         {
             return name;
         }
+
         public abstract PokemonType GetPokemonType();
 
         public void SetName(string value)
@@ -55,7 +58,8 @@ namespace Pokemonlibrary
         }
         public ISpell GetSpellAt(int index)
         {
-           if(index < 0|| index > SpellList.Count)
+
+            if(index < 0 || index > SpellList.Count)
             {
                 return null;
             }
@@ -66,9 +70,9 @@ namespace Pokemonlibrary
         }
         public void LaunchSpell(string name)
         {
-            for(int i = 0;i< SpellList.Count;i++)
+            for(int i = 0; i < SpellList.Count; i++)
             {
-                if(SpellList[i].Name==name)
+                if(SpellList[i].Name == name)
                 {
                     if (SpellList[i].Energy <= GetLife())
                     {

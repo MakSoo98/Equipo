@@ -23,13 +23,10 @@ namespace TestAlex
             ISpell s = new Spell();
             IPokemon p = new WaterPokemon();
 
-            for(int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                int n = p.AddSpell().Count
-                
-                    if(n =! 0)
-            }
 
+            }
         }
 
         static void Main(string[] args)

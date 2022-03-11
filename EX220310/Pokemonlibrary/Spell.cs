@@ -8,7 +8,17 @@ namespace Pokemonlibrary
     {
         private string name;
         private double energy;
-        private SpellType spelltype;
+        private SpellType spellType;
+
+        public Spell()
+        {
+
+        }
+
+        public Spell(string name, double energy, SpellType spellType)
+        {
+
+        }
 
         public string GetName()
         {
@@ -19,23 +29,25 @@ namespace Pokemonlibrary
         {
             name = value;
         }
+
         public double GetEnergy()
         {
             return this.energy;
         }
+
         public void SetEnergy(double value)
         {
             energy = value;
         }
 
-       public SpellType GetSpellType()
+        public SpellType GetSpellType()
         {
-            return spelltype;
+            return spellType;
         }
 
         public void SetSpellType(SpellType value)
         {
-            spelltype = value;
+            spellType = value;
         }
     }
 }

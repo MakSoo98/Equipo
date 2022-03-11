@@ -7,7 +7,6 @@ namespace Pokemonlibrary
         string Name 
         { 
             get 
-            
             { 
                 return GetName(); 
             } 
@@ -16,8 +15,10 @@ namespace Pokemonlibrary
                 SetName(value);
             }
         }
+
         double Energy 
-        { get 
+        { 
+            get 
             { 
                 return GetEnergy(); 
             }

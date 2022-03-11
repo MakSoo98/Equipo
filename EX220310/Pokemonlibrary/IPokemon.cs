@@ -6,43 +6,30 @@ namespace Pokemonlibrary
 {
     public interface IPokemon
     {
-         string Name 
-         {
-            get
-            {
-                return GetName();
-            }
-            set
-            {
-                SetName(value);
-            }
-         }
+        //
+        
+        string Name 
+        {
+            get => GetName();
+       
+            set => SetName(value);
+        }
+
         double Life
         {
-            get
-            {
-                return GetLife();
-            }
+            get => GetLife();
         }
 
         double StartLife 
         {
-            get
-            {
-                return GetStartLife();
-            }
+            get => GetStartLife();
 
-            set 
-            {
-                SetStartLife(value);
-            }
+            set => SetStartLife(value);
         }
-         PokemonType PokemonType
+
+        PokemonType PokemonType
         {
-            get 
-            { 
-                return GetPokemonType(); 
-            }
+            get => GetPokemonType();
         }
 
         public string GetName();
